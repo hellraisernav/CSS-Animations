@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: lightcoral;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    display: block;
+}
+
+button {
+    margin-left: calc((100% - 150px) / 2);
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+.box {
+    width: 280px;
+    height: 120px;
+    background-color: grey;
+    margin-left: calc((100% - 280px) / 2);
+    margin-top: 2em;
+}
+
+.rubber {
+    cursor: pointer;
+}
+
+.rubber:hover {
+    animation: rubber 2s;
+}
+
+@keyframes rubber {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    35% {
+        transform: scale3d(1.25, .75, 1.8);
+    }
+
+    45% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    60% {
+        transform: scale3d(1.2, 0.8, 1);
+    }
+
+    0% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+}
